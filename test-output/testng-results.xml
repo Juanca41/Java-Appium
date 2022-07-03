@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-03T02:29:39 ART" name="Mobile App Tests" finished-at="2022-07-03T02:29:59 ART" duration-ms="19322">
+  <suite started-at="2022-07-03T14:56:47 ART" name="Mobile App Tests" finished-at="2022-07-03T14:57:09 ART" duration-ms="21527">
     <groups>
     </groups>
-    <test started-at="2022-07-03T02:29:39 ART" name="Welcome Screen Tests" finished-at="2022-07-03T02:29:59 ART" duration-ms="19322">
+    <test started-at="2022-07-03T14:56:47 ART" name="Welcome Screen Tests" finished-at="2022-07-03T14:57:09 ART" duration-ms="21527">
       <class name="bettervet.mobile.app.test.FirstTest">
-        <test-method is-config="true" signature="setCapabilities()[pri:0, instance:bettervet.mobile.app.test.FirstTest@6c779568]" started-at="2022-07-03T02:29:40 ART" name="setCapabilities" finished-at="2022-07-03T02:29:45 ART" duration-ms="5122" status="PASS">
+        <test-method is-config="true" signature="setCapabilities()[pri:0, instance:bettervet.mobile.app.test.FirstTest@6c779568]" started-at="2022-07-03T14:56:48 ART" name="setCapabilities" finished-at="2022-07-03T14:56:54 ART" duration-ms="6680" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setCapabilities -->
-        <test-method signature="welcomeScreenTest()[pri:0, instance:bettervet.mobile.app.test.FirstTest@6c779568]" started-at="2022-07-03T02:29:45 ART" name="welcomeScreenTest" finished-at="2022-07-03T02:29:58 ART" duration-ms="13381" status="FAIL">
+        <test-method signature="welcomeScreenTest()[pri:0, instance:bettervet.mobile.app.test.FirstTest@6c779568]" started-at="2022-07-03T14:56:54 ART" name="welcomeScreenTest" finished-at="2022-07-03T14:57:08 ART" duration-ms="13621" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[An element could not be located on the page using the given search parameters.
@@ -20,7 +20,7 @@ Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17
 System info: host: 'MacBook-Pro-de-Juan.local', ip: 'fe80:0:0:0:4f5:a327:f384:be54%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.3.1', java.version: '11.0.15'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {app: /Users/jcgularte/Desktop/Cu..., appActivity: com.bettervet.MainActivity, appPackage: com.bettervet, automationName: UiAutomator2, databaseEnabled: false, desired: {app: /Users/jcgularte/Desktop/Cu..., appActivity: com.bettervet.MainActivity, appPackage: com.bettervet, automationName: UiAutomator2, deviceName: Samsung Galaxy S21, platformName: android, setWebContentsDebuggingEnabled: true}, deviceApiLevel: 31, deviceManufacturer: Google, deviceModel: sdk_gphone64_arm64, deviceName: emulator-5554, deviceScreenDensity: 320, deviceScreenSize: 1080x2400, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2, platform: LINUX, platformName: Android, platformVersion: 12, setWebContentsDebuggingEnabled: true, statBarHeight: 48, takesScreenshot: true, viewportRect: {height: 2256, left: 0, top: 48, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 3389a0ca-0ffa-4d16-94b6-9a2276a8a779
+Session ID: 8b6227ef-fc11-4861-b9fb-eaf7fe353c38
 *** Element info: {Using=xpath, value=//android.widget.TextView[@text='Login']}]]>
             </message>
             <full-stacktrace>
@@ -30,7 +30,7 @@ Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17
 System info: host: 'MacBook-Pro-de-Juan.local', ip: 'fe80:0:0:0:4f5:a327:f384:be54%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.3.1', java.version: '11.0.15'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {app: /Users/jcgularte/Desktop/Cu..., appActivity: com.bettervet.MainActivity, appPackage: com.bettervet, automationName: UiAutomator2, databaseEnabled: false, desired: {app: /Users/jcgularte/Desktop/Cu..., appActivity: com.bettervet.MainActivity, appPackage: com.bettervet, automationName: UiAutomator2, deviceName: Samsung Galaxy S21, platformName: android, setWebContentsDebuggingEnabled: true}, deviceApiLevel: 31, deviceManufacturer: Google, deviceModel: sdk_gphone64_arm64, deviceName: emulator-5554, deviceScreenDensity: 320, deviceScreenSize: 1080x2400, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2, platform: LINUX, platformName: Android, platformVersion: 12, setWebContentsDebuggingEnabled: true, statBarHeight: 48, takesScreenshot: true, viewportRect: {height: 2256, left: 0, top: 48, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 3389a0ca-0ffa-4d16-94b6-9a2276a8a779
+Session ID: 8b6227ef-fc11-4861-b9fb-eaf7fe353c38
 *** Element info: {Using=xpath, value=//android.widget.TextView[@text='Login']}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -58,7 +58,7 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
 at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
 at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-at bettervet.mobile.app.test.FirstTest.welcomeScreenTest(FirstTest.java:45)
+at bettervet.mobile.app.test.FirstTest.welcomeScreenTest(FirstTest.java:47)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -88,7 +88,7 @@ at java.base/java.lang.Thread.run(Thread.java:834)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- welcomeScreenTest -->
-        <test-method is-config="true" signature="shutDown()[pri:0, instance:bettervet.mobile.app.test.FirstTest@6c779568]" started-at="2022-07-03T02:29:58 ART" name="shutDown" finished-at="2022-07-03T02:29:59 ART" duration-ms="262" status="PASS">
+        <test-method is-config="true" signature="shutDown()[pri:0, instance:bettervet.mobile.app.test.FirstTest@6c779568]" started-at="2022-07-03T14:57:08 ART" name="shutDown" finished-at="2022-07-03T14:57:09 ART" duration-ms="439" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shutDown -->
