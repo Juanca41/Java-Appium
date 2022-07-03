@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Mobile App Tests]" guice-stage="DEVELOPMENT" allow-return-values="true">
+  <listeners>
+    <listener class-name="bettervet.mobile.app.base.TestListener"/>
+  </listeners>
+  <test thread-count="2" parallel="tests" name="Welcome Screen Tests(failed)">
+    <classes>
+      <class name="bettervet.mobile.app.test.FirstTest">
+        <methods>
+          <include name="setCapabilities"/>
+          <include name="shutDown"/>
+          <include name="welcomeScreenTest"/>
+        </methods>
+      </class> <!-- bettervet.mobile.app.test.FirstTest -->
+    </classes>
+  </test> <!-- Welcome Screen Tests(failed) -->
+</suite> <!-- Failed suite [Mobile App Tests] -->
