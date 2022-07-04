@@ -4,6 +4,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -16,10 +17,11 @@ import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.remote.MobileCapabilityType;
 
-public class Base {
+public class BaseMethods {
 	
 	
 	protected AndroidDriver<AndroidElement> driver;
+	protected Logger log;
 
 	@BeforeTest(alwaysRun = true)
 	public void setCapabilities() throws MalformedURLException {

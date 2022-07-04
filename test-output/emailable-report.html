@@ -8,19 +8,19 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Mobile App Tests</th></tr>
-<tr><td><a href="#t0">Welcome Screen Tests</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">21,527</td><td></td><td></td></tr>
+<tr><th colspan="8">Mobile App - Login Tests</th></tr>
+<tr><td><a href="#t0">Positive Login Test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">19,878</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Mobile App Tests</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Welcome Screen Tests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">bettervet.mobile.app.test.FirstTest</td><td><a href="#m0">welcomeScreenTest</a></td><td rowspan="1">1656871014965</td><td rowspan="1">13621</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Mobile App - Login Tests</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Positive Login Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">bettervet.mobile.app.tests.LoginTests</td><td><a href="#m0">positiveLogin</a></td><td rowspan="1">1656903293163</td><td rowspan="1">12965</td></tr></tbody>
 </table>
-<h2>Welcome Screen Tests</h2><h3 id="m0">bettervet.mobile.app.test.FirstTest#welcomeScreenTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+<h2>Positive Login Test</h2><h3 id="m0">bettervet.mobile.app.tests.LoginTests#positiveLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>juancarlosgularte@bettervet.com</td><td>Helloworld10</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;MacBook-Pro-de-Juan.local&apos;, ip: &apos;fe80:0:0:0:4f5:a327:f384:be54%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.3.1&apos;, java.version: &apos;11.0.15&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {app: /Users/jcgularte/Desktop/Cu..., appActivity: com.bettervet.MainActivity, appPackage: com.bettervet, automationName: UiAutomator2, databaseEnabled: false, desired: {app: /Users/jcgularte/Desktop/Cu..., appActivity: com.bettervet.MainActivity, appPackage: com.bettervet, automationName: UiAutomator2, deviceName: Samsung Galaxy S21, platformName: android, setWebContentsDebuggingEnabled: true}, deviceApiLevel: 31, deviceManufacturer: Google, deviceModel: sdk_gphone64_arm64, deviceName: emulator-5554, deviceScreenDensity: 320, deviceScreenSize: 1080x2400, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2, platform: LINUX, platformName: Android, platformVersion: 12, setWebContentsDebuggingEnabled: true, statBarHeight: 48, takesScreenshot: true, viewportRect: {height: 2256, left: 0, top: 48, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 8b6227ef-fc11-4861-b9fb-eaf7fe353c38
-*** Element info: {Using=xpath, value=//android.widget.TextView[@text=&apos;Login&apos;]}
+Session ID: 01a68e7f-00de-4c73-bf1d-55d16fbc1f79
+*** Element info: {Using=xpath, value=//android.view.View[@text=&apos;Welcome Back&apos;]}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -43,7 +43,10 @@ Session ID: 8b6227ef-fc11-4861-b9fb-eaf7fe353c38
 	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
 	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
 	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at bettervet.mobile.app.test.FirstTest.welcomeScreenTest(FirstTest.java:47)
+	at bettervet.mobile.app.screens.BaseObject.find(BaseObject.java:28)
+	at bettervet.mobile.app.screens.BaseObject.check_if_element_is_present(BaseObject.java:66)
+	at bettervet.mobile.app.screens.LoginScreen.inLoginPage(LoginScreen.java:25)
+	at bettervet.mobile.app.tests.LoginTests.positiveLogin(LoginTests.java:31)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
