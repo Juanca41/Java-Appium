@@ -29,7 +29,15 @@ public class WelcomeScreen extends BaseObject{
 
 	public void goToLoginScreen() {
 		assertTexts();
-		click(login_button);
+		while(check_if_element_is_present(login_button) == true) {
+			System.out.println("Login button is still present.");
+			click(login_button);
+			System.out.println("Login button was clicked.");
+			if(check_if_element_is_present(login_button) == false) {
+				break;
+			}
+		}
+		
 	}
 	
 //	@AndroidFindBy(xpath="//android.widget.TextView[@text='Login']")

@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -59,15 +60,21 @@ public class BaseObject {
 	protected void assert_element_is_displayed(By locator) {
 		waitForElementToBeVisible(locator);
 		WebElement element = find(locator);
-		Assert.assertTrue(element.isDisplayed(), "The element is not displayed.");
+		Assert.assertTrue(element.isDisplayed(), "The element is not displayed: "+locator);
 	}
 	
 	protected Boolean check_if_element_is_present(By locator) {
-		return find(locator).isDisplayed();
+		try {
+//			waitForElementToBeVisible(locator);
+			WebElement element = find(locator);
+			return element.isDisplayed();
+		}catch (NoSuchElementException e){
+			return false;
+		}
 	}
 	
 	private WebDriverWait wait_element() {
-		WebDriverWait wait = new WebDriverWait(driver, 30);
+		WebDriverWait wait = new WebDriverWait(driver, 10);
 		return wait;
 	}
 	
