@@ -59,17 +59,4 @@ public class BaseMethods {
 		}
 	}
 	
-	 public WebElement waitUntilElementIsVisible(By locator) {
-		    WebDriverWait wait = new WebDriverWait(driver, 10);
-		    return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
-		}
-//	public void changeContext(String reqContext) {
-//		Set<String> contextName = driver.getContextHandles();
-//		for (String contexts : contextName) {
-//			if (StringUtils.containsIgnoreCase(contexts, reqContext)) {
-//				driver.context(contexts);
-//				break;
-//				}
-//			}
-//		}
 }
