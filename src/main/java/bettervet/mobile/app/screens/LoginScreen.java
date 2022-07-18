@@ -4,11 +4,10 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 
 import io.appium.java_client.android.AndroidDriver;
-import io.appium.java_client.android.AndroidElement;
 
 public class LoginScreen extends BaseObject{
 	
-	public LoginScreen(AndroidDriver<AndroidElement> driver, Logger log) {
+	public LoginScreen(AndroidDriver driver, Logger log) {
 		super(driver, log);
 	}
 	

@@ -1,5 +1,6 @@
 package bettervet.mobile.app.screens;
 
+import java.time.Duration;
 import java.util.List;
 
 import org.apache.logging.log4j.Logger;
@@ -11,25 +12,24 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import io.appium.java_client.android.AndroidDriver;
-import io.appium.java_client.android.AndroidElement;
 
 public class BaseObject {
 
-	protected AndroidDriver<AndroidElement> driver; //to make it available for other class that extends this one
+	protected AndroidDriver driver; //to make it available for other class that extends this one
 	protected Logger log; //variable to control and print the logs
 	
 	
-	public BaseObject(AndroidDriver<AndroidElement> driver, Logger log) {
+	public BaseObject(AndroidDriver driver, Logger log) {
 		// TODO Auto-generated constructor stub
 		this.driver = driver;
 		this.log = log;
 	}
 	
-	protected AndroidElement find(By locator) {
+	protected WebElement find(By locator) {
 		return driver.findElement(locator);
 	}
 	
-	protected List<AndroidElement> findAll(By locator) {
+	protected List<WebElement> findAll(By locator) {
 		return driver.findElements(locator);
 	}
 	
@@ -74,7 +74,7 @@ public class BaseObject {
 	}
 	
 	private WebDriverWait wait_element() {
-		WebDriverWait wait = new WebDriverWait(driver, 10);
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		return wait;
 	}
 	

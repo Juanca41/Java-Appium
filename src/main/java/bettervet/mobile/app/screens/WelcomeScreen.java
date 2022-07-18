@@ -4,12 +4,11 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 
 import io.appium.java_client.android.AndroidDriver;
-import io.appium.java_client.android.AndroidElement;
 //import io.appium.java_client.pagefactory.AndroidFindBy;
 
 public class WelcomeScreen extends BaseObject{
 	
-	public WelcomeScreen(AndroidDriver<AndroidElement> driver, Logger log) {
+	public WelcomeScreen(AndroidDriver driver, Logger log) {
 		super(driver, log);
 	}
 	
